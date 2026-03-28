@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description">
+	<title>Contact</title>
+</head>
+<body>
+	<section id="contact-me" style="background-color: #f9f9f9; padding: 20px;">
+		<h2 style="color: #2c3e50; font-size: 24px;">Contact Me</h2>
+
+		<form action="#" method="post" style="border: 2px solid #2c3e50; padding: 15px;">
+			<fieldset>
+				<legend style="font-size: 18px; color: #34495e;">Personal Information</legend>
+
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required maxlength="50" placeholder="Enter your full name"><br><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required placeholder="example@gmail.com"><br><br>
+
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required placeholder="+60-123456789"><br><br>
+
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date" required><br><br>
+
+				<label for="range">Satisfaction (1-10)</label>
+				<input type="range" id="range" name="satisfaction" min="1" max="10">
+			</fieldset>
+
+			<fieldset>
+				<legend style="font-size: 18px; color: #34495e;">Message Details</legend>
+
+				<label for="subject">Subject:</label>
+				<select id="subject" name="subject" required>
+					<optgroup label="General">
+						<option value="inquiry">General Inquiry</option>
+						<option value="feedback">Feedback</option>
+					</optgroup>
+					<optgroup label="Projects">
+						<option value="collaboration">Collaboration Request</option>
+						<option value="presentation">Presentation Invite</option>
+					</optgroup>
+				</select><br><br>
+
+				<label for="message">Message</label><br>
+				<textarea id="message" name="message" rows="5" cols="40" maxlength="500" required></textarea><br><br>
+			</fieldset>
+
+			<fieldset>
+				<legend style="font-size: 18px color: #34495e">Preferences</legend>
+
+				<p style="color: #2c3e50;">Topics of Interest:</p>
+				<input type="checkbox" id="os" name="interest" value="Operating Systems">
+				<label for="os">Operating System</label><br>
+
+				<input type="checkbox" id="req" name="interest" value="Requirement Engineering">
+				<label for="req">Requirement Engineering</label><br>
+
+				<input type="checkbox" id="ds" name="interest" value="Data Structure">
+				<label for="ds">Data Structure</label><br><br>
+
+				<p style="color: #2c3e50;">Preferred Contact Method:</p>
+				<input type="radio" id="contact-email" name="contact-method" value="Email" required>
+				<label for="contact-email">Email</label><br>
+
+				<input type="radio" id="contact-phone" name="contact-method" value="Phone" required>
+				<label for="contact-phone">Phone</label><br>
+
+				<input type="radio" id="contact-video" name="contact-method" value="Video" required>
+				<label for="contact-video">Video Call</label><br><br>
+			</fieldset>
+
+			<input type="submit" value="Send Message" style="background-color: #2c3e50; color: #fff; padding: 10px; border: none; font-size: 16px;">
+		</form>
+	</section>
+	
+</body>
+</html>
