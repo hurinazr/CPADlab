@@ -138,3 +138,101 @@ nav a {
     grid-template-columns: 1fr 280px;
   }
 }
+
+/*cContact Form Styling*/
+form {
+  max-width: 600px;
+  margin: var(--space-lg) auto;
+  padding: var(--space-md);
+  background-color: var(--color-grey-light);
+  border: 1px solid var(--color-grey-mid);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--color-grey-mid);
+}
+
+form label {
+  display: block;
+  margin-bottom: var(--space-sm);
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: var(--space-sm);
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--color-grey-mid);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent2);
+}
+
+/* Submit button */
+form input[type="submit"] {
+  background-color: var(--color-secondary);
+  color: var(--color-grey-light);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--color-accent1);
+}
+
+form input[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+/* Pseudo-elements & pseudo-classes */
+
+/* Decorative quote mark on blockquote */
+blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  color: var(--color-accent1);
+  margin-right: var(--space-sm);
+}
+
+blockquote::after {
+  content: "”";
+  font-size: 3rem;
+  color: var(--color-accent1);
+  margin-left: var(--space-sm);
+}
+
+/* Coloured left bar on section headings */
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 1em;
+  background-color: var(--color-accent2);
+  margin-right: var(--space-sm);
+  vertical-align: middle;
+}
+
+/* Alternating row colours in academic table */
+tbody tr:nth-child(even) {
+  background-color: var(--color-grey-mid);
+}
+tbody tr:nth-child(odd) {
+  background-color: var(--color-grey-light);
+}
+
+/* Remove top border of first and bottom border of last item in a list */
+ul li:first-child {
+  border-top: none;
+}
+ul li:last-child {
+  border-bottom: none;
+}
