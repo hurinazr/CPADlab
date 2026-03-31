@@ -172,3 +172,49 @@ input[type="submit"]:focus {
   outline: none;
   box-shadow: 0 0 0 3px var(--color-accent2);
 }
+
+/* Card Grid on index.html */
+.page-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-content: start;
+}
+
+.page-cards .card {
+  background-color: var(--color-grey-light);
+  border: 1px solid var(--color-grey-mid);
+  border-radius: 8px;
+  padding: var(--space-md);
+  box-shadow: 0 2px 4px var(--color-grey-mid);
+  transition: transform 0.2s;
+}
+
+.page-cards .card:hover {
+  transform: translateY(-4px);
+}
+
+.page-cards .featured {
+  grid-column: span 2;
+}
+
+/* Two-column layout on skills.html (or about.html) */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.5rem;
+}
+
+.grid-layout main {
+  background-color: var(--color-grey-light);
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--color-grey-mid);
+}
+
+.grid-layout aside {
+  background-color: var(--color-accent2);
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--color-grey-mid);
+}
